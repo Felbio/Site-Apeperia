@@ -1,0 +1,379 @@
+.diferenciais {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+}
+
+.diferenciais__lista {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.diferenciais__item {
+    max-width: 350px;
+
+    box-sizing: border-box;
+
+    padding: 2rem 0 2rem 5rem;
+}
+
+.item__titulo {
+    color: var(--cinza-escuro);
+    font-weight: 700;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+
+    margin-bottom: 1.5rem;
+}
+
+.item__texto {
+    line-height: normal;
+}
+
+
+
+
+
+/* ------------------------------------------------ */
+
+.sobre {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.sobre__titulo {
+    color: var(--cinza-escuro);
+    font-weight: 700;
+    font-size: 1.5rem;
+    font-family: var(--montserrat);
+    text-transform: uppercase;
+    text-align: center;
+
+    margin-bottom: 1.25rem;
+}
+
+.sobre__texto {
+    line-height: normal;
+
+    margin-bottom: 1rem;
+}
+
+.sobre__texto--destaque {
+    color: var(--cinza-escuro);
+    font-weight: 700;
+}
+
+.sobre__plataformas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    margin-bottom: 1rem;
+}
+
+
+
+/* ----------------------------------------- */
+
+.contato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.contato__titulo {
+    color: var(--cinza-escuro);
+    font-weight: 700;
+    font-size: 1.5rem;
+    font-family: var(--montserrat);
+    text-transform: uppercase;
+    text-align: center;
+
+    margin-bottom: 1.25rem;
+}
+
+.contato__botao {
+    color: var(--cinza-escuro);
+
+    border-color: var(--cinza-escuro);
+
+    margin-top: 1rem;
+}
+
+
+/* ----------------------------------------------- */
+
+.institucional {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    color: var(--fonte-cinza);
+    text-align: center;
+
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.institucional__titulo {
+    color: var(--cinza-escuro);
+    font-weight: 700;
+    font-size: 1.5rem;
+    font-family: var(--montserrat);
+    text-transform: uppercase;
+    text-align: center;
+
+    margin-bottom: 2rem;
+}
+
+.institucional__descricao {
+    margin-bottom: 2rem;
+}
+
+.institucional__endereco {
+    font-size: 1.5rem;
+    line-height: normal;
+
+    margin-bottom: 2rem;
+}
+
+.institucional__contato {
+    font-size: 1.2rem;
+    line-height: 1.8;
+
+    margin-top: 2rem;
+}
+
+.institucional__contato-telefone {
+    line-height: normal;
+}
+
+.institucional__contato-email {
+    color: var(--fonte-link);
+    text-decoration: underline;
+    display: block;
+}
+
+.institucional__video {
+    width: 100vw;
+}
+
+
+/* ------------------------------------------
+ */
+
+
+ .rodape {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: var(--bg-rodape);
+
+    padding-top: 2.5rem;
+    padding-bottom: 2rem;
+}
+
+.rodape__social {
+    display: flex;
+}
+
+.rodape__midia {
+    display: block;
+
+    width: 42px;
+    height: 42px;
+
+    margin: 2rem 1rem;
+}
+
+.rodape__navegacao {
+    color: var(--branco);
+    text-align: center;
+    line-height: 3;
+}
+
+
+.rodape__link {
+    display: inline-block;
+
+    margin: 0 .5rem .7rem;
+}
+
+
+/* ---------------------- */
+
+@media screen and (min-width: 1024px) {
+    .container {
+        padding-left: calc((100% - 940px)/2);
+        padding-right: calc((100% - 940px)/2);
+    }
+}
+
+
+/* -------------------------- */
+
+@media screen and (min-width: 1024px) {
+    .cabecalho {
+        flex-direction: row;
+        justify-content: space-between;
+
+        border: none;
+    }
+}
+
+/* -------------------------------- */
+
+@media screen and (min-width: 1024px) {
+    .chamada {
+        background-image: url(../img/bg-intro.jpg);
+        background-size: cover;
+
+        padding-top: 8.25rem;
+    }
+
+    .chamada__titulo {
+        font-size: 3.25rem;
+        margin-bottom: 2rem;
+    }
+}
+
+/* --------------------------------- */
+
+@media screen and (min-width: 1024px) {
+    .diferenciais {
+        background-color: var(--cinza-claro);
+    }
+
+    .diferenciais__lista {
+        justify-content: space-around;
+    }
+}
+
+
+/* --------------------------------- */
+
+@media screen and (min-width: 1024px) {
+    .institucional__conteudo {
+        width: 100%;
+
+        display: flex;
+        justify-content: space-between;
+
+        text-align: left;
+    }
+
+    .institucional__video {
+        align-self: flex-end;
+
+        width: 375px;
+    }
+
+    .institucional__contato-email {
+        display: block;
+    }
+}
+
+/* --------------------------------- */
+
+@media screen and (min-width: 1024px) {
+    .planos__cartoes {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+
+    .cartao {
+        max-width: 300px;
+    }
+}
+
+
+
+/* --------------------------------- */
+
+
+@media screen and (min-width: 1024px) {
+    .rodape {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .rodape__navegacao {
+        text-align: left;
+
+        min-width: 600px;
+    }
+}
+
+/* ------------------------------------ */
+
+@media screen and (min-width: 1024px) {
+    .sobre {
+        display: flex;
+    }
+
+    .sobre__conteudo {
+        margin-right: 3rem;
+    }
+
+    .sobre__titulo {
+        text-align: left;
+    }
+
+    .sobre__texto--divisao {
+        border-bottom: 1px solid var(--cinza-medio);
+
+        padding-bottom: 1.5rem;
+    }
+
+    .sobre__imagem {
+        display: block;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
